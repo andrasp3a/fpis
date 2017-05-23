@@ -36,6 +36,7 @@ object StateMain extends App {
 
 
   val randomGenerator = Simple(10)
+  println("\n===\nPlayer\n===\n")
   println(randomPlayer.run(randomGenerator))
 
 }
