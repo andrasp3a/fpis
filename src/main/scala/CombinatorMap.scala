@@ -20,4 +20,8 @@ object CombinatorMap {
     }
   }
 
+  def nonNegativeLessThan(upperBoundary: Int): Rand[Int] = {
+    map(int)(_ % upperBoundary)
+  }
+
 }

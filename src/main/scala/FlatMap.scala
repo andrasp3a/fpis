@@ -10,7 +10,7 @@ object FlatMap {
     }
   }
 
-  val randomLengthRandomIntList = flatMap(int) { randomInt =>
+  val randomLengthRandomIntList = flatMap(nonNegativeLessThan(100)) { randomInt =>
     intList(randomInt)
   }
 

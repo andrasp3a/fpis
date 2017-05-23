@@ -19,8 +19,6 @@ case class State[S, +A](run: S => (A, S)) {
 
 object State {
 
-  type Rand[A] = State[RandomGenerator, A]
-
   def unit[S, A](a: A): State[S, A] =
     State(currentSate => (a, currentSate))
 
